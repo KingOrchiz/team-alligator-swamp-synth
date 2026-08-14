@@ -15,7 +15,8 @@ for path in "${required[@]}"; do
 done
 
 if grep -RIlE 'BEGIN [A-Z ]*PRIVATE KEY|Authorization:[[:space:]]*Bearer|client_secret' "$root" \
-  --exclude-dir=.git; then
+  --exclude-dir=.git \
+  --exclude='verify-project.sh'; then
   echo "STOP: possible secret found"
   exit 1
 fi

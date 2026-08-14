@@ -2,10 +2,10 @@
 
 ## Gap Analysis and Delivery Strategy
 
-**Course project:** Software synthesizer in openFrameworks  
-**Team:** Alligator — members `s-001083` and `s-01130`  
-**Deadline:** 25 August 2026, 23:55 UTC  
-**Planning window:** 14–25 August 2026  
+**Course project:** Software synthesizer in openFrameworks
+**Team:** Alligator — members `s-001083` and `s-01130`
+**Deadline:** 25 August 2026, 23:55 UTC
+**Planning window:** 14–25 August 2026
 **Expected effort:** approximately 12 hours during Weeks 5–6
 
 ## 1. Executive recommendation
@@ -169,25 +169,25 @@ If work is bundled into fewer days, post during the actual work sessions, but ma
 
 ### Ready-to-adapt post prompts
 
-**Post 1 — scope**  
+**Post 1 — scope**
 “Team Alligator has defined our synthesizer MVP: three distinct voices, keyboard and XY mouse control, and a functional waveform/spectrum display. We deliberately kept sampling optional so we can prioritise stable audio, OOP quality, and documentation. Our next question is how best to keep the audio thread safe while updating parameters from user input.”
 
-**Post 2 — setup obstacle**  
+**Post 2 — setup obstacle**
 “Today I configured openFrameworks and tested the audio callback. The main obstacle was [error]. The cause was [cause], and we resolved it by [fix]. The screenshot shows the first stable output. My next step is to isolate synthesis logic from `ofApp`.”
 
-**Post 3 — OOP**  
+**Post 3 — OOP**
 “We introduced a `SynthVoice` base class with specialised lead, FM, and percussion subclasses. This inheritance relationship gives the engine one interface for different synthesis algorithms. We also use composition: `ofApp` contains the engine, input mapper, and visualizer. This has already reduced UI/audio coupling.”
 
-**Post 4 — intermediate sound result**  
+**Post 4 — intermediate sound result**
 “The lead and FM voices now produce clearly different timbres. The attached clip shows the same note played through both. We adjusted [parameter] because [observation]. We still need to handle clipping when notes overlap.”
 
-**Post 5 — interaction**  
+**Post 5 — interaction**
 “Mouse X/Y now changes timbre in real time. We chose this over adding more keyboard shortcuts because the relationship between gesture and sound is easier to explore. The display shows the parameter values so the visualisation communicates state rather than serving as decoration.”
 
-**Post 6 — test/fix**  
+**Post 6 — test/fix**
 “During integration we reproduced [bug] using [steps]. The issue came from [cause]. After the fix, both team members tested [cases]. The PR and before/after evidence are linked below.”
 
-**Post 7 — reflection**  
+**Post 7 — reflection**
 “Our release candidate meets the required three sounds and demonstrates inheritance plus composition. The most important lesson was [lesson]. If we continued, we would improve [bounded future enhancement]. The repository, final controls, and verification evidence are linked here.”
 
 ## 8. Development and release plan
