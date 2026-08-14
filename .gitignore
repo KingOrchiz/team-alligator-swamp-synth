@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+.idea/
+obj/
+*.xcuserstate
+bin/*.app/
+bin/*.exe
+Team_Alligator_Software_Synthesizer.zip
